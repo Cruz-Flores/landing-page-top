@@ -85,7 +85,6 @@ body {
 header {
   position: fixed;
   z-index: 10;
-
   width: 100%;
   background-color: var(--dark-blue);
 }
@@ -94,6 +93,7 @@ span {
   display: block;
   color: var(--logo-white);
   font-size: 2.4rem;
+  text-align: center;
 }
 
 ul {
@@ -107,6 +107,7 @@ a {
 
 button {
   display: block;
+  width: fit-content;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
@@ -115,15 +116,27 @@ button {
   font-size: 1.8rem;
 }
 
-/* nav */
+.section {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
 
 .width-div {
   max-width: 1000px;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem 0 2rem;
+  padding: 3rem 2rem 3rem 2rem;
   align-items: center;
+}
+
+/* nav */
+
+.nav-div {
+  padding: 0 2rem 0 2rem;
+  margin: auto;
 }
 
 .nav ul {
@@ -137,36 +150,45 @@ button {
   padding: 2rem;
 }
 
-/* @media (max-width: 650px) {
-  .nav {
+@media (max-width: 650px) {
+  .nav-div {
     flex-direction: column;
   }
 
-  .nav ul {
-    margin: 0;
+  span {
+    padding: 0.5rem 0;
   }
 
-  .nav a,
-  span {
-    padding: 0.5rem;
+  .nav a {
     text-align: center;
+    padding: 0.5rem;
   }
-} */
+}
 
 /* first section */
 
 .first-section {
   background-color: var(--dark-blue);
-}
-
-.first-section-div {
   padding-top: 7rem;
+  padding-bottom: 6rem;
 }
 
 .text-div {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+}
+
+@media (max-width: 650px) {
+  .first-section-div {
+    flex-direction: column;
+  }
+
+  .text-div {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
 }
 
 .text-div > h2 {
@@ -194,7 +216,10 @@ button {
 .second-section-div {
   flex-direction: column;
   justify-content: space-evenly;
-  height: 40rem;
+}
+
+.second-section-div > h2 {
+  padding-bottom: 3rem;
 }
 
 .gallery-div {
@@ -207,6 +232,17 @@ button {
   display: flex;
   flex-direction: column;
   width: 150px;
+}
+
+@media (max-width: 650px) {
+  .gallery-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-div {
+    margin-bottom: 2rem;
+  }
 }
 
 .container-div > p {
@@ -226,9 +262,9 @@ button {
   background-color: var(--secondary-white);
 }
 
-.third-section-div {
+/* .third-section-div {
   height: 40rem;
-}
+} */
 
 .third-section-div > blockquote {
   display: flex;
@@ -241,18 +277,16 @@ button {
   text-align: center;
   font-size: 3.6rem;
   font-style: italic;
-  padding-bottom: 3rem;
 }
 
 /* four section */
 
 .four-section {
   background-color: var(--logo-white);
-  height: 30rem;
 }
 
 .four-section-div {
-  margin-top: 10rem;
+  /* margin: 3rem 0 3rem 0; */
   justify-content: space-around;
   background-color: var(--button-blue);
   border-radius: 20px;
