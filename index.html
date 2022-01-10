@@ -4,31 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio</title>
   </head>
   <body>
     <header>
       <div class="nav-div width-div">
-        <span>Header Logo</span>
         <nav class="nav">
           <ul>
-            <li><a href="">Header link one</a></li>
-            <li><a href="">Header link one</a></li>
-            <li><a href="">Header link one</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="first-section section">
+    <section id="home" class="first-section section">
       <div class="width-div first-section-div">
         <div class="text-div">
-          <h2>This website is awesome</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit, dictumst
-            duis iaculis nisi mauris eget, nulla dis sed proin conubia eleifend.
-          </p>
-          <button>sign up</button>
+          <h2>Hello, I'm Cruz, <br />web developer</h2>
+          <p>Fullstack JavaScript Developer</p>
         </div>
         <img
           class="img"
@@ -37,44 +41,65 @@
         />
       </div>
     </section>
-    <section class="second-section section">
+    <section id="projects" class="second-section section">
       <div class="width-div second-section-div">
-        <h2>Some random information</h2>
+        <h2>Some projects</h2>
         <div class="gallery-div">
           <div class="container-div">
-            <div class="frame"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <div class="frame tribute-page"></div>
+            <p>Tribute Page</p>
+            <a
+              target="_blank"
+              href="https://github.com/Cruz-Flores/tribut-page-fcc"
+              >View Code</a
+            >
+            <a
+              target="_blank"
+              href="https://cruz-flores.github.io/tribut-page-fcc/"
+              >Live Preview</a
+            >
           </div>
           <div class="container-div">
             <div class="frame"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <p>Lorem ipsum.</p>
+            <a target="_blank" href="">View Code</a>
+            <a target="_blank" href="">Live Preview</a>
           </div>
           <div class="container-div">
             <div class="frame"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <p>Lorem ipsum.</p>
+            <a target="_blank" href="">View Code</a>
+            <a target="_blank" href="">Live Preview</a>
           </div>
           <div class="container-div">
             <div class="frame"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <p>Lorem ipsum.</p>
+            <a target="_blank" href="">View Code</a>
+            <a target="_blank" href="">Live Preview</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="third-section section">
+    <section id="about" class="third-section section">
       <div class="width-div third-section-div">
-        <blockquote
-          cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm"
-        >
-          <p>
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit, phasellus
-            aptent ac proin sociis conubia, gravida penatibus purus scelerisque
-            mus ullamcorper."
-          </p>
-          <cite>-- Lorem ipsum dolor. </cite>
-        </blockquote>
+        <h2 class="">Meet Me</h2>
+        <p>
+          Soy un desarrollador Fullstack ubicado en Tizayuca Hidalgo, con
+          entusiasmo por la creacion de aplicaciones web desde la interfaz de
+          usuario hasta la base de datos.
+        </p>
+        <p>
+          Persona autodidacta, con gran pasion por el aprendizaje constante, no
+          solo en materia de desarrollo web, si no tambien por temas referentes
+          a ciencia en general.
+        </p>
+        <p>
+          Interesado en el crecimiento profesional continuo y en trabajar con
+          personas con las que pueda compartir conocimientos.
+        </p>
       </div>
     </section>
-    <section class="four-section section">
+    <section id="contact" class="four-section section">
       <div class="width-div four-section-div">
         <div id="seconddiv">
           <h3>Call to action! It's time!</h3>
@@ -83,6 +108,5 @@
         <button>Sign Up</button>
       </div>
     </section>
-    <footer>By Cruz Flores</footer>
   </body>
 </html>
